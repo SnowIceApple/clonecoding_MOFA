@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국 외교부 클론코딩</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header">
+                <div class="header_top">
+                    <div class="container">
+                        <div class="ht_box">
+                            <div class="ht_left">
+                                <div class="certificate">
+                                    <span>이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                                </div>
+                            </div>
+                            <div class="ht_right">
+                                <div class="util_zoom">
+                                    <span>화면크기</span>
+                                    <ul>
+                                        <li class="zoom_plus zoom_control">
+                                            <button>
+                                                <span class="hidden_text">화면 확대하기</span>
+                                            </button>
+                                        </li>
+                                        <li class="zoom_minus zoom_control">
+                                            <button>
+                                                <span class="hidden_text">화면 축소하기</span>
+                                            </button>
+                                        </li>
+                                        <li class="zoom_return">
+                                            <button>초기화</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header_link">
+                                    <ul>
+                                        <li class="national_symbol"><a href="#" target="_blank">국가상징</a></li>
+                                        <li><a href="#" target="_blank">어린이·청소년</a></li>
+                                        <li><a href="#" target="_blank">RSS</a></li>
+                                        <li><a href="#" target="_blank">ENGLISH</a></li>
+                                    </ul>
+                                </div>
+                                <div class="all_menu">
+                                    <div class="all_menu_open">
+                                        <button>전체 메뉴</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_bot"> 
+                    <div class="container">
+                        <div class="hb_box">
+                            <div class="hb_left">
+                                <h1 class="logo">
+                                    <a href="#">
+                                        <img src="./img/logo.png" alt="외교부 로고">
+                                    </a>
+                                </h1>
+                                <h2 class="new_kr">
+                                    <a href="#">
+                                        <img src="./img/slogan.png" alt="다시 대한민국 새로운 국민의 나라">
+                                    </a>
+                                </h2>
+                            </div>
+                            <nav id="nav">
+                                <ul class="floor1">
+                                    <li>
+                                        <a href="#;">주요 외교활동</a>
+                                        <div class="mega_container">
+                                            <div class="mega_tit">
+                                                <strong></strong>
+                                            </div>
+                                            <ul class="floor2">
+                                                <li>
+                                                    <a href="#" target="_blank">대통령 정상외교</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">장관 외교활동</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#;">영사·국가/지역</a>
+                                        <div class="mega_container">
+                                            <div class="mega_tit">
+                                                <strong></strong>
+                                            </div>
+                                            <ul class="floor2">
+                                                <li>
+                                                    <a href="#" target="_blank">여행·해외체류정보</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">해외안전여행</a></li>
+                                                        <li><a href="#" target="_blank">영사조력 법정정보</a></li>
+                                                        <li><a href="#" target="_blank">재외동포 365 민원포털</a></li>
+                                                        <li><a href="#" target="_blank">영사관련민원안내</a></li>
+                                                        <li><a href="#" target="_blank">영사관련이용방법</a></li>
+                                                        <li><a href="#" target="_blank">영사관련서식</a></li>
+                                                        <li><a href="#" target="_blank">여권</a></li>
+                                                        <li><a href="#" target="_blank">해외입국 안내(비자)</a></li>
+                                                        <li><a href="#" target="_blank">아포스티유 영사확인</a></li>
+                                                        <li><a href="#" target="_blank">해외이주</a></li>
+                                                        <li><a href="#" target="_blank">재외국민등록</a></li>
+                                                        <li><a href="#" target="_blank">재외동포 현황</a></li>
+                                                        <li><a href="#" target="_blank">재외동포 정책</a></li>
+                                                        <li><a href="#" target="_blank">해외진출 우리국민 편의증진</a></li>
+                                                        <li><a href="#" target="_blank">재외국민 보호정책</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">국가/지역정보</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">국가/지역 검색</a></li>
+                                                        <li><a href="#" target="_blank">동북아시아</a></li>
+                                                        <li><a href="#" target="_blank">동남아시아</a></li>
+                                                        <li><a href="#" target="_blank">서남아시아태평양</a></li>
+                                                        <li><a href="#" target="_blank">북미</a></li>
+                                                        <li><a href="#" target="_blank">중남미</a></li>
+                                                        <li><a href="#" target="_blank">러시아·중앙아시아</a></li>
+                                                        <li><a href="#" target="_blank">유럽</a></li>
+                                                        <li><a href="#" target="_blank">중동</a></li>
+                                                        <li><a href="#" target="_blank">아프리카</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">해외안전여행 공지</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#;">외교정책</a>
+                                        <div class="mega_container">
+                                            <div class="mega_tit">
+                                                <strong></strong>
+                                            </div>
+                                            <ul class="floor2">
+                                                <li>
+                                                    <a href="#" target="_blank">국정과제</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">국정비전 및 국정목표</a></li>
+                                                        <li><a href="#" target="_blank">외교부 국정과제</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">인도·태평양 전략</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">인도·태평양 전략 소개</a></li>
+                                                        <li><a href="#" target="_blank">주요 이행 동향 및 자료</a></li>
+                                                        <li><a href="#" target="_blank">한·아세안 연대 구상(KASI)</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">한·중앙아시아 K 실크로드 협력 구상</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">한반도</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">담대한 구상</a></li>
+                                                        <li><a href="#" target="_blank">북한 핵문제</a></li>
+                                                        <li><a href="#" target="_blank">대북 독자제재</a></li>
+                                                        <li><a href="#" target="_blank">북한 사이버 위협 대응</a></li>
+                                                        <li><a href="#" target="_blank">한반도 평화체제</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">조약·국제법</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">조약·국제법</a></li>
+                                                        <li><a href="#" target="_blank">국제법동향과실무</a></li>
+                                                        <li><a href="#" target="_blank">국제법 소통</a></li>
+                                                        <li><a href="#" target="_blank">영토·해양이슈</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">개발협력</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">개발협력</a></li>
+                                                        <li><a href="#" target="_blank">개발협력정책 및 현황</a></li>
+                                                        <li><a href="#" target="_blank">국제질병퇴치기금</a></li>
+                                                        <li><a href="#" target="_blank">ODA 통합 홈페이지</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">국제기구·지역협력체</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">국제연합(UN)</a></li>
+                                                        <li><a href="#" target="_blank">경제협력개발기구(OECD)</a></li>
+                                                        <li><a href="#" target="_blank">세계무역기구(WTO)</a></li>
+                                                        <li><a href="#" target="_blank">국제원자력기구(IAEA)</a></li>
+                                                        <li><a href="#" target="_blank">아시아태평양경제협력체(APEC)</a></li>
+                                                        <li><a href="#" target="_blank">아시아 협력 대화(ACD)</a></li>
+                                                        <li><a href="#" target="_blank">아세안(ASEAN)</a></li>
+                                                        <li><a href="#" target="_blank">아시아·유럽정상회의(ASEM)</a></li>
+                                                        <li><a href="#" target="_blank">유럽연합(EU)</a></li>
+                                                        <li><a href="#" target="_blank">동아시아·라틴아메리카 협력 포럼(FEALAC)</a></li>
+                                                        <li><a href="#" target="_blank">주요20개국(G20) 정상회의</a></li>
+                                                        <li><a href="#" target="_blank">유엔 아시아·태평양 경제사회위원회(ESCAP)</a></li>
+                                                        <li><a href="#" target="_blank">주요7개국(G7) 정상회의</a></li>
+                                                        <li><a href="#" target="_blank">믹타(MIKTA)</a></li>
+                                                        <li><a href="#" target="_blank">한·일·중 3국 협력</a></li>
+                                                        <li><a href="#" target="_blank">중남미지역기구</a></li>
+                                                        <li><a href="#" target="_blank">한·카리브 고위급 포럼</a></li>
+                                                        <li><a href="#" target="_blank">아프리카연합</a></li>
+                                                        <li><a href="#" target="_blank">한·아프리카 포럼</a></li>
+                                                        <li><a href="#" target="_blank">유엔교육과학문화기구(UNESCO)</a></li>
+                                                        <li><a href="#" target="_blank">기타기구정보</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">안보</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">군축·비확산</a></li>
+                                                        <li><a href="#" target="_blank">글로벌 안보협력</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">인권</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">인권외교활동</a></li>
+                                                        <li><a href="#" target="_blank">북한인권문제</a></li>
+                                                        <li><a href="#" target="_blank">민주주의증진외교</a></li>
+                                                        <li><a href="#" target="_blank">국제인권규범</a></li>
+                                                        <li><a href="#" target="_blank">국제인권관련기구</a></li>
+                                                        <li><a href="#" target="_blank">주요동향 및 자료</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">환경</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">기후변화·환경</a></li>
+                                                        <li><a href="#" target="_blank">청정에너지</a></li>
+                                                        <li><a href="#" target="_blank">남극</a></li>
+                                                        <li><a href="#" target="_blank">북극</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">경제</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">경제</a></li>
+                                                        <li><a href="#" target="_blank">국제경제동향</a></li>
+                                                        <li><a href="#" target="_blank">경제협정</a></li>
+                                                        <li><a href="#" target="_blank">경제안보외교센터</a></li>
+                                                        <li><a href="#" target="_blank">해외입찰정보</a></li>
+                                                        <li><a href="#" target="_blank">해외진출기업 활동지원</a></li>
+                                                        <li><a href="#" target="_blank">박람회·전시회정보</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">의전</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">의전</a></li>
+                                                        <li><a href="#" target="_blank">의전과의례</a></li>
+                                                        <li><a href="#" target="_blank">국가의전</a></li>
+                                                        <li><a href="#" target="_blank">국가상훈</a></li>
+                                                        <li><a href="#" target="_blank">해외순방·외빈방한</a></li>
+                                                        <li><a href="#" target="_blank">주한공관</a></li>
+                                                        <li><a href="#" target="_blank">재미있는의전</a></li>
+                                                        <li><a href="#" target="_blank">자주묻는질문</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">공공외교</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">우리 공공외교 소개 및 정책</a></li>
+                                                        <li><a href="#" target="_blank">공공외교 사업개요</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">외교부 주요행사</a>
+                                                    <ul class="floor3">
+                                                        <li><a href="#" target="_blank">2024년</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="hb_right">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
