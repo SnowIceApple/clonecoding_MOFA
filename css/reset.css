@@ -88,6 +88,18 @@ input[type="search"]{
 	border-radius: 0;
 }
 
+input::-ms-clear,
+input::-ms-reveal{
+    display:none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
+
 .hidden_text{
 	position: absolute;
 	font-size: 1px;
