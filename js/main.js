@@ -54,16 +54,52 @@ $(document).ready(function(){
         loop: true,
         centeredSlides: true, 
         slidesPerView: 'auto',
-        speed: 800,
+        speed: 1000,
+        autoplay: {
+            duration: 3000,
+        },
 
+        navigation: {
+          nextEl: '.main_slide_next button',
+          prevEl: '.main_slide_prev button',
+        },
+
+        a11y: {
+            prevSlideMessage: '이전 슬라이드로 이동',
+            nextSlideMessage: '다음 슬라이드로 이동',
+        },
+
+      });
       
-        pagination: {
-          el: '.swiper-pagination',
+      $('.main_slide_onOff').on('click', function(){
+        if($(this).hasClass('play')){
+            $(this).removeClass('play').addClass('pause');
+            main_slide.autoplay.stop();
+        }
+        else if($(this).hasClass('pause')){
+            $(this).removeClass('pause').addClass('play');
+            main_slide.autoplay.start();
+        }
+      });
+
+      var main_wide_banner_slide = new Swiper('.main_wide_banner_slide', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        effect: 'fade', 
+        fadeEffect: {
+            crossFade: true
+          },
+          touchRatio: 0,
+
+        speed: 1000,
+        autoplay: {
+            duration: 2000,
         },
       
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+        pagination: {
+          el: '.wbs_pagination',
+          clickable: true,
         },
 
       });

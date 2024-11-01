@@ -784,7 +784,7 @@ section{
 
 .main_slide{
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 0 70px 0;
 }
 
 .main_slide .swiper-slide{
@@ -855,4 +855,98 @@ section{
     color: #fff;
     font-weight: 600;
     line-height: 1.3;
+}
+
+.main_slide_control{
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    background: #ddd;
+    margin-left: 470px;
+}
+
+.ms_btn{
+    width: 50px;
+    height: 50px;
+    border-right: 1px solid #eee;
+}
+
+.ms_btn:last-child{
+    border-right: 0px;
+}
+
+.ms_btn a,
+.ms_btn button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    transition: all .3s ease;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.main_slide_link a{
+    background-color: var(--color2-);
+}
+
+.ms_btn button:hover{
+    background-color: #000;
+}
+
+.main_slide_prev button{
+    background-image: url('../img/btn_mb_prev.png');
+}
+
+.main_slide_prev button:hover{
+    background-image: url('../img/btn_mb_prev_on.png');
+}
+
+.main_slide_onOff button{
+    background-image: url('../img/btn_mb_pause.png');
+}
+
+.main_slide_onOff.pause button{
+    background-image: url('../img/btn_mb_play.png');
+}
+
+.main_slide_onOff button:hover{
+    background-image: url('../img/btn_mb_pause_on.png');
+}
+
+.main_slide_onOff.pause:hover button{
+    background-image: url('../img/btn_mb_play_on.png');
+}
+
+.main_slide_next button{
+    background-image: url('../img/btn_mb_next.png');
+}
+
+.main_slide_next button:hover{
+    background-image: url('../img/btn_mb_next_on.png');
+}
+
+.wbs_pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.wbs_pagination .swiper-pagination-bullet{
+    width: 16px !important;
+    height: 16px !important;
+    background: #95958e !important;
+    opacity: 1 !important;
+    border-radius: 999px !important;
+    transition: all .3s ease;
+}
+
+.wbs_pagination .swiper-pagination-bullet-active{
+    background: #000 !important;
+    width: 35px !important;
 }
