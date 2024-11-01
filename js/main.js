@@ -38,4 +38,33 @@ $(document).ready(function(){
             height: 140,
         }, 200); 
     });
+
+    $('.all_menu_open').on('click', function(){
+        $('.all_menu').addClass('active');
+        $('body').addClass('fixed');
+    });
+
+    $('.all_menu_close').on('click', function(){
+        $('.all_menu').removeClass('active'); 
+        $('body').removeClass('fixed');
+    });
+
+    var main_slide = new Swiper('.main_slide', {
+        direction: 'horizontal',
+        loop: true,
+        centeredSlides: true, 
+        slidesPerView: 'auto',
+        speed: 800,
+
+      
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      });
 });
