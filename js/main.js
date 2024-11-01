@@ -75,10 +75,12 @@ $(document).ready(function(){
         if($(this).hasClass('play')){
             $(this).removeClass('play').addClass('pause');
             main_slide.autoplay.stop();
+            $(this).children().find('.hidden_text').text('슬라이드 자동재생 시작');
         }
         else if($(this).hasClass('pause')){
             $(this).removeClass('pause').addClass('play');
             main_slide.autoplay.start();
+            $(this).children().find('.hidden_text').text('슬라이드 자동재생 정지');
         }
       });
 
