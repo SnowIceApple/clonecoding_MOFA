@@ -145,7 +145,6 @@ $(document).ready(function(){
         direction: 'horizontal',
         loop: true,
         slidesPerView: 'auto',
-        disableOnInteraction: false,
         speed: 1000,
 
         navigation: {
