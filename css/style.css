@@ -1343,6 +1343,9 @@ section{
     opacity: 0.2;
 }
 
+.main_info_slide .swiper-slide.deactive{
+}
+
 .main_info_slide .swiper-slide.swiper-slide-active,
 .main_info_slide .swiper-slide.swiper-slide-next,
 .main_info_slide .swiper-slide.active{
@@ -1377,8 +1380,8 @@ section{
     transition: all .3s ease;
 }
 
-.main_info_slide .swiper-slide:focus .iss_cont,
-.main_info_slide .swiper-slide:hover .iss_cont{
+.main_info_slide .swiper-slide:not(.deactive):focus .iss_cont,
+.main_info_slide .swiper-slide:not(.deactive):hover .iss_cont{
     background: transparent;
     color: #fff;
 }

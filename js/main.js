@@ -108,8 +108,6 @@ $(document).ready(function(){
 
       $('.notice_tab_btn ul li button').on('click', function(){
         $(this).parent().addClass('active').siblings().removeClass('active');
-        var height = $(this).siblings('.notice_tab').outerHeight();
-        var idx = $(this).parent().index();
 
         $('.notice_tab_box').height($('.notice_tab_btn ul li.active').children('.notice_tab').height());
 
@@ -160,9 +158,10 @@ $(document).ready(function(){
         on: {
             
             slideChange: function(){
-                this.slides.forEach(slide => slide.classList.remove('active'));
+                this.slides.forEach(slide => slide.classList.remove('active', 'deactive'));
                 var idx = this.activeIndex;
                 this.slides[idx + 2].classList.add('active');
+                this.slides[idx + 3].classList.add('deactive');
             }
         }
       });
