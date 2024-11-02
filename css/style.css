@@ -1399,8 +1399,8 @@ section{
     transition: border-color .3s ease;
 }
 
-.main_info_slide .swiper-slide:focus .iss_cont .iss_tit,
-.main_info_slide .swiper-slide:hover .iss_cont .iss_tit{
+.main_info_slide .swiper-slide:not(.deactive):focus .iss_cont .iss_tit,
+.main_info_slide .swiper-slide:not(.deactive):hover .iss_cont .iss_tit{
     border-color: #fff;
 }
 
