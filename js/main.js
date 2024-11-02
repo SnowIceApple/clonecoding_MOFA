@@ -39,7 +39,7 @@ $(document).ready(function(){
         }, 200); 
     });
 
-    $('.all_menu_open').on('click', function(){
+    $('.all_menu_open > button').on('click', function(){
         $('.all_menu').addClass('active');
         $('body').addClass('fixed');
     });
@@ -104,5 +104,66 @@ $(document).ready(function(){
           clickable: true,
         },
 
+      });
+
+      $('.notice_tab_btn ul li button').on('click', function(){
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        var height = $(this).siblings('.notice_tab').outerHeight();
+        var idx = $(this).parent().index();
+
+        $('.notice_tab_box').height($('.notice_tab_btn ul li.active').children('.notice_tab').height());
+
+      });
+
+      $('.notice_tab_box').each(function(){
+        $(this).height($('.notice_tab_btn ul li.active').children('.notice_tab').height());
+      });
+
+      var gov_banner_slide = new Swiper('.gov_banner_slide', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        effect: 'fade', 
+        fadeEffect: {
+            crossFade: true
+          },
+          touchRatio: 0,
+
+        speed: 1000,
+        autoplay: {
+            duration: 3000,
+        },
+      
+        pagination: {
+          el: '.wbs_pagination',
+          clickable: true,
+        },
+
+      });
+
+      var main_info_slide = new Swiper('.main_info_slide', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 'auto',
+        speed: 1000,
+
+        navigation: {
+          nextEl: '.main_slide_next button',
+          prevEl: '.main_slide_prev button',
+        },
+
+        a11y: {
+            prevSlideMessage: '이전 슬라이드로 이동',
+            nextSlideMessage: '다음 슬라이드로 이동',
+        },
+
+        on: {
+            
+            slideChange: function(){
+                this.slides.forEach(slide => slide.classList.remove('active'));
+                var idx = this.activeIndex;
+                this.slides[idx + 2].classList.add('active');
+            }
+        }
       });
 });
