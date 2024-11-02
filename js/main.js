@@ -86,26 +86,37 @@ $(document).ready(function(){
       });
 
       var main_wide_banner_slide = new Swiper('.main_wide_banner_slide', {
-        direction: 'horizontal',
         loop: true,
-        slidesPerView: 1,
         effect: 'fade', 
         fadeEffect: {
             crossFade: true
           },
-          touchRatio: 0,
 
-        speed: 1000,
+          speed: 2000,
         autoplay: {
-            duration: 2000,
+            delay: 3000,
             disableOnInteraction: false,
         },
       
         pagination: {
           el: '.wbs_pagination',
           clickable: true,
+          disableOnInteraction: false,
         },
 
+      });
+
+      $('.wbs_onOff').on('click', function(){
+        if($(this).hasClass('play')){
+            $(this).removeClass('play').addClass('pause');
+            main_wide_banner_slide.autoplay.stop();
+            $(this).children().find('.hidden_text').text('슬라이드 자동재생 시작');
+        }
+        else if($(this).hasClass('pause')){
+            $(this).removeClass('pause').addClass('play');
+            main_wide_banner_slide.autoplay.start();
+            $(this).children().find('.hidden_text').text('슬라이드 자동재생 정지');
+        }
       });
 
       $('.notice_tab_btn ul li button').on('click', function(){
@@ -135,8 +146,8 @@ $(document).ready(function(){
         },
       
         pagination: {
-          el: '.wbs_pagination',
-          clickable: true,
+          el: '.gbc_pagination',
+          type: "fraction",
         },
 
       });

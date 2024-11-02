@@ -784,6 +784,7 @@ section{
 .main_slide{
     width: 100%;
     padding: 50px 0 70px 0;
+    overflow: hidden;
 }
 
 .main_slide .swiper-slide{
@@ -893,8 +894,6 @@ section{
     background-color: var(--color2-);
 }
 
-.ms_btn a:focus,
-.ms_btn button:focus,
 .ms_btn a:hover,
 .ms_btn button:hover{
     background-color: #000;
@@ -904,7 +903,6 @@ section{
     background-image: url('../img/btn_mb_prev.png');
 }
 
-.main_slide_prev button:focus,
 .main_slide_prev button:hover{
     background-image: url('../img/btn_mb_prev_on.png');
 }
@@ -917,12 +915,10 @@ section{
     background-image: url('../img/btn_mb_play.png');
 }
 
-.main_slide_onOff button:focus,
 .main_slide_onOff button:hover{
     background-image: url('../img/btn_mb_pause_on.png');
 }
 
-.main_slide_onOff.pause:focus button,
 .main_slide_onOff.pause:hover button{
     background-image: url('../img/btn_mb_play_on.png');
 }
@@ -931,7 +927,6 @@ section{
     background-image: url('../img/btn_mb_next.png');
 }
 
-.main_slide_next button:focus,
 .main_slide_next button:hover{
     background-image: url('../img/btn_mb_next_on.png');
 }
@@ -967,11 +962,24 @@ section{
     margin-bottom: 70px;
 }
 
+.main_wide_banner{
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_wide_banner_control{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
 .wbs_pagination{
+    width: max-content !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 17px;
 }
 
 .wbs_pagination .swiper-pagination-bullet{
@@ -980,12 +988,35 @@ section{
     background: #95958e !important;
     opacity: 1 !important;
     border-radius: 999px !important;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .wbs_pagination .swiper-pagination-bullet-active{
     background: #000 !important;
     width: 35px !important;
+}
+
+.wbs_onOff{
+    margin-left: 10px;
+}
+
+.wbs_onOff button{
+    width: 15px;
+    height: 15px;
+}
+
+.wbs_onOff.play button{
+    background: url('../img/btn_sdbanner_pause.png');
+    background-position: center;
+    background-size: 8px;
+    background-repeat: no-repeat;
+}
+
+.wbs_onOff.pause{
+    background: url('../img/btn_sdbanner_play.png');
+    background-position: center;
+    background-size: 9px;
+    background-repeat: no-repeat;
 }
 
 /* main_notice */
@@ -1309,12 +1340,33 @@ section{
 }
 
 .gov_banner_slide_box{
+    position: relative;
     width: 340px;
 }
 
 .gov_banner_slide{
-    position: relative;
     width: 100%;
+    overflow: hidden;
+}
+
+.gov_banner_control{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 15px;
+    background: #000;
+    z-index: 2;
+}
+
+.gbc_pagination{
+    letter-spacing: -1px;
+    color: #fff !important;
 }
 
 .main_info_slide_box{
