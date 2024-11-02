@@ -57,6 +57,7 @@ $(document).ready(function(){
         speed: 1000,
         autoplay: {
             duration: 3000,
+            disableOnInteraction: false,
         },
 
         navigation: {
@@ -97,6 +98,7 @@ $(document).ready(function(){
         speed: 1000,
         autoplay: {
             duration: 2000,
+            disableOnInteraction: false,
         },
       
         pagination: {
@@ -143,6 +145,7 @@ $(document).ready(function(){
         direction: 'horizontal',
         loop: true,
         slidesPerView: 'auto',
+        disableOnInteraction: false,
         speed: 1000,
 
         navigation: {
