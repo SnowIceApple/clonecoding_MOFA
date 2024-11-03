@@ -97,6 +97,8 @@ $(document).ready(function(){
             delay: 3000,
             disableOnInteraction: false,
         },
+
+
       
         pagination: {
           el: '.wbs_pagination',
@@ -140,16 +142,40 @@ $(document).ready(function(){
           },
           touchRatio: 0,
 
-        speed: 1000,
+        speed: 2000,
         autoplay: {
-            duration: 3000,
+            delay: 3000,
+            disableOnInteraction: false,
         },
+
+        navigation: {
+          nextEl: '.gbs_next',
+          prevEl: '.gbs_prev',
+        },
+
+        a11y: {
+          prevSlideMessage: '이전 슬라이드로 이동',
+          nextSlideMessage: '다음 슬라이드로 이동',
+      },
       
         pagination: {
           el: '.gbc_pagination',
           type: "fraction",
         },
 
+      });
+
+      $('.gbs_onOff').on('click', function(){
+        if($(this).hasClass('play')){
+            $(this).removeClass('play').addClass('pause');
+            gov_banner_slide.autoplay.stop();
+            $(this).children().find('.hidden_text').text('슬라이드 자동재생 시작');
+        }
+        else if($(this).hasClass('pause')){
+            $(this).removeClass('pause').addClass('play');
+            gov_banner_slide.autoplay.start();
+            $(this).children().find('.hidden_text').text('슬라이드 자동재생 정지');
+        }
       });
 
       var main_info_slide = new Swiper('.main_info_slide', {
@@ -159,12 +185,10 @@ $(document).ready(function(){
         speed: 1000,
 
         navigation: {
-          nextEl: '.main_slide_next button',
-          prevEl: '.main_slide_prev button',
+          nextEl: '.mis_next button',
         },
 
         a11y: {
-            prevSlideMessage: '이전 슬라이드로 이동',
             nextSlideMessage: '다음 슬라이드로 이동',
         },
 
@@ -177,5 +201,25 @@ $(document).ready(function(){
                 this.slides[idx + 3].classList.add('deactive');
             }
         }
+      });
+
+      var main_commu_slide = new Swiper('.main_commu_slide', {
+        loop: true,
+        direction: 'horizontal',
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 40,
+        speed: 1000,
+
+        navigation: {
+          prevEl: '.mcs_prev',
+          nextEl: '.mcs_next',
+        },
+
+        a11y: {
+            prevSlideMessage: '이전 슬라이드로 이동',
+            nextSlideMessage: '다음 슬라이드로 이동',
+        },
+
       });
 });
