@@ -186,6 +186,10 @@
         padding: 31px 18px;
     }
 
+    #main_notice::before{
+        width: 35vw;
+    }
+
     .main_sns{
         width: 100%;
         margin-bottom: 40px;
@@ -312,4 +316,32 @@
         justify-content: flex-start;
         padding: 0 40px;
     }
+
+    .foreign_websites > div{
+        width: 100%;
+    }
+
+    .frws_desc{
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .frws_link_box{
+        flex-direction: column;
+    }
+
+    .ftr_inner{
+        justify-content: flex-start;
+    }
+
+    .ft_desc{
+        order: 2;
+    }
+
+    .ft_rel_site{
+        order: 1;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 }

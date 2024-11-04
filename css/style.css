@@ -2122,7 +2122,7 @@ section{
 }
 
 .foreign_websites > div{
-    width: calc(50% - 90px);
+    width: calc(50% - 4vw);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
