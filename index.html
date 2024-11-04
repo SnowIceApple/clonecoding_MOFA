@@ -59,8 +59,13 @@
             
                                     function zoomOut(){
                                     mainZoom = mainZoom - 10;
-                                    zoom();
+                                    if(mainZoom < 100){
+                                        mainZoom = 100;
                                     }
+                                    else{
+                                        zoom();
+                                    }
+                                }
             
                                     function zoomIn(){
                                     mainZoom = mainZoom + 10;
