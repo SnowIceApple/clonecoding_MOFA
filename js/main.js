@@ -222,4 +222,38 @@ $(document).ready(function(){
         },
 
       });
+
+      $('.frws_select button').each(function(){
+        $(this).on('click', function(){
+          $(this).closest('li').toggleClass('active');
+          if($(this).closest('li').hasClass('active')){
+            $(this).parent().siblings('.frws_floor2').stop().slideDown(300);
+          }
+          else{
+            $(this).closest('li').removeClass('active');
+            $(this).parent().siblings('.frws_floor2').stop().slideUp(300);
+          }
+        });
+      });
+
+      $(document).on('mouseup', function(e){
+        var frwsSelectBtn = $('.frws_select');
+        frwsSelectBtn.each(function(){
+          if($(this).has(e.target).length === 0){
+            $(this).closest('li').removeClass('active');
+            $(this).siblings('.frws_floor2').stop().slideUp(300);
+          }
+        });
+
+      });
+      
+      $('.frws_floor2 li button').each(function(){
+        $(this).on('click', function(){
+          var txt = $(this).text();
+          $(this).parent().parent().siblings('.frws_select').children().find('strong').text(txt);
+        });
+      });
+
+
+      
 });
