@@ -40,20 +40,42 @@
                                     <span>화면크기</span>
                                     <ul>
                                         <li class="zoom_plus zoom_control">
-                                            <button>
+                                            <button onclick="zoomIn();">
                                                 <span class="hidden_text">화면 확대하기</span>
                                             </button>
                                         </li>
                                         <li class="zoom_minus zoom_control">
-                                            <button>
+                                            <button onclick="zoomOut();">
                                                 <span class="hidden_text">화면 축소하기</span>
                                             </button>
                                         </li>
                                         <li class="zoom_return">
-                                            <button>초기화</button>
+                                            <button onclick="zoomReturn();">초기화</button>
                                         </li>
                                     </ul>
                                 </div>
+                                <script>
+                                    var mainZoom = 100;
+            
+                                    function zoomOut(){
+                                    mainZoom = mainZoom - 10;
+                                    zoom();
+                                    }
+            
+                                    function zoomIn(){
+                                    mainZoom = mainZoom + 10;
+                                    zoom();
+                                    }
+
+                                    function zoomReturn(){
+                                    mainZoom = 100;
+                                    zoom();
+                                    }
+            
+                                    function zoom(){
+                                    document.body.style.zoom = mainZoom + '%';
+                                    }
+                                </script>
                                 <div class="header_link">
                                     <ul>
                                         <li class="national_symbol"><a href="#" target="_blank">국가상징</a></li>
