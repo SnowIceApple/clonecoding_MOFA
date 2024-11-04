@@ -53,11 +53,20 @@ $(document).ready(function(){
         direction: 'horizontal',
         loop: true,
         centeredSlides: true, 
-        slidesPerView: 'auto',
+        slidesPerView: 1,
+        spaceBetween: 40,
+        
         speed: 1000,
         autoplay: {
             duration: 3000,
             disableOnInteraction: false,
+        },
+
+        breakpoints: {
+          1300 : {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+          }
         },
 
         navigation: {
@@ -198,7 +207,12 @@ $(document).ready(function(){
                 this.slides.forEach(slide => slide.classList.remove('active', 'deactive'));
                 var idx = this.activeIndex;
                 this.slides[idx + 2].classList.add('active');
-                this.slides[idx + 3].classList.add('deactive');
+                if($(window).outerWidth() >= 1300){
+                  this.slides[idx + 3].classList.add('deactive');
+                }
+                else{
+                  return;
+                }
             }
         }
       });
@@ -206,9 +220,9 @@ $(document).ready(function(){
       var main_commu_slide = new Swiper('.main_commu_slide', {
         loop: true,
         direction: 'horizontal',
-        centeredSlides: true,
-        slidesPerView: 3,
-        spaceBetween: 40,
+        centeredSlides: false,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
         speed: 1000,
 
         navigation: {
@@ -216,10 +230,31 @@ $(document).ready(function(){
           nextEl: '.mcs_next',
         },
 
+        breakpoints: {
+          1200: {
+            slidesPerView: 'auto',
+          },
+
+          1300 :{
+            slidesPerView: 3,
+            centeredSlides: true,
+          },
+        },
+
         a11y: {
             prevSlideMessage: '이전 슬라이드로 이동',
             nextSlideMessage: '다음 슬라이드로 이동',
         },
+
+        on: {
+          slideChange: function(){
+            this.slides.forEach(slide => slide.classList.remove('active', 'deactive'));
+            var idx = this.activeIndex;
+            if($(window).outerWidth() <= 1200){
+              this.slides[idx + 2].classList.add('active');
+            }
+        } 
+      }
 
       });
 

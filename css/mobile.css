@@ -1,0 +1,315 @@
+@media all and (max-width: 1480px){
+    .container{
+        box-sizing: border-box;
+    }
+
+    #header .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .logo{
+        margin-right: 15px;
+    }
+}
+
+@media all and (max-width: 1380px){
+    .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .main_minister{
+        padding: 20px 8px;
+    }
+
+}
+
+@media all and (max-width: 1300px){
+
+    .new_kr a img{
+        width: 6vw;
+    }
+
+    .main_search{
+        width: 12vw;
+    }
+
+    #main{
+        margin-bottom: 60px;
+    }
+
+    .main > strong{
+        display: none;
+    }
+
+    .main_slide{
+        box-sizing: border-box;
+        padding: 50px 40px 0px 40px;
+    }
+    
+    .main_slide .swiper-slide{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 0 160px 0;
+    }
+
+    .mss_desc{
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 155px;
+        bottom: -77.5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main_slide_control{
+        bottom: 0;
+        margin-left: 0;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #main_notice::before{
+        top: 52px;
+        height: 250px;
+    }
+
+    .main_tit{
+        padding-bottom: 35px;
+    }
+
+    .notice_tab_btn{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .notice_tab{
+        top: 145px;
+    }
+
+    .main_notice_list{
+        width: calc(100% - 505px);
+        margin: 0;
+    }
+
+    .nt_txt{
+        width: 100%;
+        max-width: calc(100% - 80px);
+    }
+
+    .nt_txt a{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nt_txt a p{
+        font-size: 16px;
+    }
+
+    .main_minister{
+        display: flex;
+        flex-wrap: wrap;
+        width: 465px;
+    }
+
+    .minister_top{
+        flex-direction: column; 
+        width: calc(100% - 135px);
+    }
+
+    .minister_top h3{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .minister_top h3 strong{
+        font-size: 28px;
+    }
+
+    .minister_portrait img{
+        width: 160px;
+    }
+
+    .minister_link{
+        width: 135px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .minister_link ul{
+        width: 105px;
+        flex-direction: column;
+        gap: 5px 0;
+    }
+
+    .minister_link ul li{
+        width: 100%;
+    }
+
+    .minister_link ul li a{
+        font-size: 14px;
+    }
+
+    .minister_link ul li:first-child a{
+        font-size: 14px;
+    }
+
+    #main_info{
+        padding-left: 30px;
+    }
+
+    .main_info_slide .swiper-slide.active{
+        opacity: 0.2 !important;
+    }
+
+    .main_info_slide_control{
+        right: 0;
+        margin-right: 0;
+    }
+
+    .main_commu_slide .swiper-slide{
+        width: 265px;
+    }
+}
+
+@media all and (max-width: 1200px){
+
+    .new_kr a img{
+        width: 7.3vw;
+    }
+
+    #nav .floor1 > li > a{
+        font-size: 14px;
+        padding: 31px 18px;
+    }
+
+    .main_sns{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .main_commu_slide .swiper-slide.active{
+        opacity: 1;
+    }
+
+    .main_koreaz{
+        width: 100%;
+    }
+
+    .koreaz_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .koreaz_top{
+        width: 50%;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .krz_top_img_box{
+        justify-content: center;
+        gap: 0 20px;
+    }
+
+    .krz_img{
+        width: 140px;
+    }
+
+    .krz_top_link ul{
+        justify-content: center;
+        gap: 0 10px;
+    }
+
+    .krz_top_link ul li{
+        width: 105px;
+    }
+
+    .krz_video_link{
+        width: 50%;
+    }
+
+    .krz_video_link a{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (max-width: 1080px){
+
+    .ht_right > div.util_zoom{
+        display: none;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    .header_bot{
+        height: 78px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .new_kr a img{
+        width: 96px;
+    }
+    
+    .main_search{
+        width: 205px;
+    }
+
+    #main_info{
+        padding-left: 0;
+    }
+
+    .gov_banner_slide_box{
+        width: calc(100% - 60px);
+        margin: 0 auto 70px auto;
+        padding: 70px 0;
+        background: url('../img/bg_notice_banner.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .gov_banner_slide{
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .gov_banner_control{
+        width: 340px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 70px;
+    }
+
+    .main_info_slide_box{
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 40px;
+    }
+
+    .main_info_slide_control{
+        margin-right: 25px;
+    }
+
+    .main_site_link{
+        gap: 30px 0;
+    }
+
+    .msl_box{
+        width: 100%;
+    }
+
+    .msl_desc{
+        justify-content: flex-start;
+        padding: 0 40px;
+    }
+}
