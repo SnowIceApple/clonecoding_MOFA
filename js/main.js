@@ -232,6 +232,7 @@ $(document).ready(function(){
 
         breakpoints: {
           1200: {
+            centeredSlides: false,
             slidesPerView: 'auto',
           },
 
