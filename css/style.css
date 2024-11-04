@@ -339,10 +339,10 @@ section{
     transition: all .5s ease;
 }
 
-.all_menu.active .all_menu_container{
+.all_menu_container.active{
     opacity: 1;
     visibility: visible;
-    transition: all .5s ease;
+    transition: opacity .5s ease;
 }
 
 .all_menu_box{
@@ -377,6 +377,12 @@ section{
     font-size: 12.5px;
     letter-spacing: -0.5px;
     color: #fff;
+}
+
+.all_menu_close button{
+    width: 40px;
+    height: 40px;
+    background: url('../img/btn_sitemap_close2.png') center no-repeat;
 }
 
 .all_menu_top_link{
@@ -770,6 +776,10 @@ section{
     background: url('../img/btn_head_sch.png') center center no-repeat;
     background-size: 17px;
     z-index: 2;
+}
+
+.mob_util{
+    display: none;
 }
 
 /* main */
