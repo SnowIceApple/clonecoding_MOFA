@@ -480,6 +480,13 @@
     .all_menu_box{
         padding: 0;
         background: linear-gradient(to right, #F0F3F8 0 180px, #fff 180px 100%);
+        transform: translateX(100%);
+        transition: all .4s ease;
+        transition-delay: 0.1s;
+    }
+
+    .all_menu_container.active .all_menu_box{
+        transform: translateX(0);
     }
 
     .all_menu_top{
@@ -648,13 +655,13 @@
         height: 14px;
         background: var(--color4-);
         opacity: 0;
-        transition: all .5s ease;
         transform-origin: center;
     }
 
     .am_floor2 > li.active.deco .amf2_tit::after{
         transform: translateY(-50%) scaleY(0);
         opacity: 1;
+        transition: all .5s ease;
     }
 
     .amf2_tit a{
