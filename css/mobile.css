@@ -196,6 +196,7 @@
     }
 
     .main_commu_slide .swiper-slide.active{
+        opacity: 1;
     }
 
     .main_koreaz{
@@ -392,6 +393,10 @@
     .main_minister{
         width: 100%;
     }
+
+    .main_commu_slide .swiper-slide.active{
+        opacity: 0.3;
+    }
 }
 
 @media all and (max-width: 736px){
@@ -399,8 +404,6 @@
     .container{
         padding: 0 15px !important;
     }
-
-
 
     #header{
         height: 100px;
@@ -739,4 +742,5 @@
         width: 4px;
         height: 1px;
     }
+
 }
