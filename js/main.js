@@ -315,7 +315,7 @@ $(document).ready(function(){
 
         on: {
           slideChange: function(){
-            this.slides.forEach(slide => slide.classList.remove('active', 'deactive'));
+            this.slides.forEach(slide => slide.classList.remove('active'));
             var idx = this.activeIndex;
             if($(window).outerWidth() <= 1200){
               this.slides[idx + 2].classList.add('active');
