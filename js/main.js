@@ -52,10 +52,12 @@ $(document).ready(function(){
 
     $(window).on('resize', function(){
       if($(window).outerWidth() <= 736){
-        header.css('height', 100 + 'px');
+        basicHeight = 100;
+        header.css('height', basicHeight + 'px');
       }
       else{
-        header.css('height', 140 + 'px');
+        basicHeight = 140;
+        header.css('height', basicHeight + 'px');
       }
     });
 
