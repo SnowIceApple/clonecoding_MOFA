@@ -11,6 +11,12 @@ $(document).ready(function(){
     });
 
     var basicHeight = 140;
+    if($(window).outerWidth() <= 736){
+      basicHeight = 100;
+    }
+    else{
+      basicHeight = 140;
+    }
 
     $('.floor1 > li').on('mouseover focusin', function(){
         var tg = $(this);
