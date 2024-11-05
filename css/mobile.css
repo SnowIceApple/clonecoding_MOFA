@@ -871,6 +871,8 @@
     .mss_desc{
         padding: 15px 20px;
         height: 110px;
+        width: calc(100% - 150px);
+        bottom: -55.5px;
     }
 
     .mss_desc h2{
