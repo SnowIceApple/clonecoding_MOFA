@@ -88,9 +88,12 @@ $(document).ready(function(){
       }
     });
 
+
     $('.amf2_tit > a').on('click', function(e){
-      if($(window).outerWidth() <= 736){
+      if($(this).closest('li').hasClass('deco')){
         e.preventDefault();
+      }
+      if($(window).outerWidth() <= 736){
         $(this).closest('li.deco').toggleClass('active').siblings().removeClass('active');
       }
       // $('.am_floor2 > li.deco').each(function(){
