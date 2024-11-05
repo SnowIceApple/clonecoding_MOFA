@@ -200,6 +200,12 @@ $(document).ready(function(){
         $(this).height($('.notice_tab_btn ul li.active').children('.notice_tab').height());
       });
 
+      $(window).on('resize', function(){
+        $('.notice_tab_box').each(function(){
+          $(this).height($('.notice_tab_btn ul li.active').children('.notice_tab').height());
+        });
+      });
+
       var gov_banner_slide = new Swiper('.gov_banner_slide', {
         direction: 'horizontal',
         loop: true,
@@ -251,6 +257,7 @@ $(document).ready(function(){
         loop: true,
         slidesPerView: 'auto',
         speed: 1000,
+        watchOverflow: false,
 
         navigation: {
           nextEl: '.mis_next button',
@@ -397,6 +404,11 @@ $(document).ready(function(){
             $(this).parent().siblings('.frs_floor2').stop().slideUp(300);
           }
         });
+      });
+
+      $('.frws_floor2 li button').on('click', function(){
+        $(this).closest('.frws_floor2').closest('li').removeClass('active');
+        $(this).closest('.frws_floor2').stop().slideUp(300);
       });
 
       $(document).on('mouseup', function(e){

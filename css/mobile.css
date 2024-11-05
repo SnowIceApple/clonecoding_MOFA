@@ -80,6 +80,10 @@
         padding-bottom: 35px;
     }
 
+    .nt_direct_link{
+        top: -60px;
+    }
+
     .notice_tab_btn{
         width: 100%;
         padding-top: 30px;
@@ -112,6 +116,17 @@
         display: flex;
         flex-wrap: wrap;
         width: 465px;
+    }
+
+    .minister_tit{
+        width: 140px;
+        height: 50px;
+        border-radius: 14px 0;
+    }
+
+    .minister_tit h2{
+        font-size: 16px;
+        background-size: 16px;
     }
 
     .minister_top{
@@ -213,6 +228,8 @@
         display: flex;
         align-content: center;
         flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
     }
 
     .krz_top_img_box{
@@ -273,11 +290,15 @@
     }
 
     .main_notice_list{
-        width: calc(100% - 435px);
+        width: calc(100% - 395px);
+    }
+
+    .notice_tab_btn ul{
+        gap: 0 5px;
     }
 
     .main_minister{
-        width: 390px;
+        width: 370px;
     }
     
     .main_search{
@@ -362,19 +383,47 @@
 }
 
 @media all and (max-width: 900px){
-    .main_notice_list{
-        width: 100%;
-        margin-bottom: 50px;
+
+    #main_notice_wide_banner{
+        margin-bottom: 100px;
     }
 
-    .main_tit{
+    #main_notice::before{
+        top: -65px;
+        width: 45vw;
+    }
+
+    .main_notice_list{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .main_notice .main_tit{
         justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .nt_direct_link{
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        order: 2;
+    }
+
+    .notice_tab.type2{
+        flex-wrap: wrap;
     }
 
     .notice_tab_btn{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .notice_tab_btn ul{
+        gap: 0 10px;
     }
 
     .notice_tab_btn ul li button{
@@ -390,8 +439,84 @@
         top: 175px;
     }
 
+    .notice_tab ul li{
+        margin-bottom: 35px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .notice_tab.type2 ul li{
+        margin-bottom: 35px;
+    }
+
+    .notice_tab ul li:last-child{
+        border-bottom: 0px;
+    }
+
+    .nt_cate a{
+        height: 50px;
+        border: 0px;
+    }
+
+    .nt_cate_deco{
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        top: -10px;
+    }
+
+    .nt_txt a{
+        flex-wrap: wrap;
+        gap: 12px 0;
+    }
+
+    .nt_txt a p{
+        font-size: 20px;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .nt_txt a span{
+        font-size: 15px;
+    }
+
     .main_minister{
         width: 100%;
+        justify-content: center;
+    }
+
+    .minister_top{
+        width: max-content;
+        flex-direction: row;
+    }
+
+    .minister_top h3{
+        text-align: left;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .minister_top h3 strong{
+        font-size: 36px;
+    }
+
+    .minister_portrait img{
+        width: 180px;
+    }
+
+    .minister_link{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .minister_link ul{
+        flex-direction: row;
+        width: max-content;
+        gap: 0 10px;
+    }
+
+    .minister_link ul li{
+        width: 105px;
     }
 
     .main_commu_slide .swiper-slide.active{
@@ -402,7 +527,7 @@
 @media all and (max-width: 736px){
 
     .container{
-        padding: 0 15px !important;
+        padding: 0;
     }
 
     #header{
@@ -461,7 +586,7 @@
     
     #main_notice .container,
     #main_communication .container{
-        width: 400px;
+        max-width: 400px;
         margin: 0 auto;
     }
 
@@ -741,6 +866,425 @@
         background: var(--color4-) !important;
         width: 4px;
         height: 1px;
+    }
+
+    .mss_desc{
+        padding: 15px 20px;
+        height: 110px;
+    }
+
+    .mss_desc h2{
+        font-size: 15px;
+    }
+
+    #main_notice_wide_banner .container{
+        padding: 0 30px;
+    }
+
+    .main_tit h2{
+        font-size: 32px;
+    }
+
+    .notice_tab_btn > ul{
+        width: 100%;
+        gap: 0px;
+    }
+
+    .notice_tab_btn > ul > li{
+        width: 25%;
+    }
+
+    .notice_tab_btn ul > li button{
+        width: 100%;
+        border-right: 0px;
+        height: 38px;
+    }
+
+    .notice_tab_btn ul > li:last-child button{
+        border-right: 1px solid #000;
+    }
+
+    .notice_tab_btn ul li button span{
+        font-size: 14px;
+    }
+
+    .nt_cate a{
+        width: 45px;
+        height: 35px;
+    }
+
+    .nt_txt{
+        max-width: calc(100% - 45px);
+    }
+
+    .nt_txt a p{
+        font-size: 14px;
+    }
+
+    .nt_txt a span{
+        font-size: 13px;
+    }
+
+
+    .main_notice .main_tit{
+        padding-bottom: 25px;
+    }
+
+    .notice_tab{
+        top: 130px;
+    }
+
+    .notice_tab.type1 ul li:last-child{
+        margin-bottom: 0px;
+    }
+
+    .nt_direct_link a{
+        font-size: 14px;
+    }
+
+    .main_notice_list{
+        margin-bottom: 50px;
+    }
+
+    #main_notice{
+        margin-bottom: 0px;
+    }
+
+    .main_minister{
+        gap: 0 4vw;
+        flex-wrap: nowrap;
+        padding-top: 60px;
+    }
+
+    .minister_tit{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+        width: 120px;
+        height: 40px;
+    }
+
+    .minister_tit h2{
+        font-size: 14px;
+        background-size: 14px;
+    }
+
+    .minister_top{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .minister_top h3{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .minister_top h3 strong{
+        font-size: 18px;
+    }
+
+    .minister_portrait{
+        max-width: 145px;
+    }
+
+    .minister_link{
+        width: max-content;
+    }
+
+    .minister_link ul{
+        flex-direction: column;
+        gap: 5px 0;
+    }
+
+    .gov_banner_slide_box{
+        background: none;
+        padding: 40px 0;
+        margin-bottom: 0px;
+    }
+
+    .gov_banner_control{
+        bottom: 40px;
+    }
+
+    .main_info_slide_box{
+        width: 400px;
+        margin: 0 auto;
+        padding: 0px;
+        overflow-y: hidden;
+    }
+
+    .main_info_slide .swiper-slide{
+        width: 150px !important;
+        height: 170px;
+        margin-right: 15px;
+    }
+
+    .iss_cont{
+        padding: 25px 20px;
+    }
+
+    .iss_cont .cate{
+        font-size: 11px;
+    }
+
+    .iss_tit{
+        height: 70px;
+    }
+
+    .iss_tit strong{
+        font-size: 16px;
+    }
+
+    .go_link span{
+        font-size: 13px;
+    }
+
+    .main_info_slide_control{
+        gap: 10px 0;
+        margin-right: 15px;
+    }
+
+    .mis_btn button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .mis_btn button::before{
+        display: none;
+    }
+
+    .main_sns .main_tit{
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .main_sns_link{
+        margin-top: 20px;
+    }
+
+    .main_sns_link ul li a img{
+        width: 40px;
+    }
+
+    #main_info{
+        margin-bottom: 60px;
+    }
+
+    .main_commu_slide{
+        padding: 15px 15px;
+    }
+
+    .main_commu_slide .swiper-slide{
+        width: 150px;
+        height: 220px;
+        border-radius: 8px;
+    }
+
+    .mcss_inner{
+        padding: 0;
+    }
+
+    .mcss_img{
+        height: 150px;
+    }
+
+    .mcss_txt,
+    .mcss_bot{
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .mcss_txt{
+        margin-top: 5px;
+    }
+
+    .mcss_txt p{
+        font-size: 13px;
+    }
+
+    .mcss_cate{
+        height: 16px;
+        background-size: 16px !important;
+        padding-left: 22px;
+        margin-bottom: 6px;
+    }
+
+    .mcss_cate span{
+        font-size: 11px;
+    }
+
+    .mcs_control{
+        position: static;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 0 10px;
+    }
+
+    .msc_btn{
+        width: 32px;
+        height: 32px;
+    }
+
+    .koreaz_tit{
+        display: none;
+    }
+
+    .koreaz_top{
+        width: 100%;
+    }
+
+    .krz_img{
+        width: 105px;
+    }
+
+    .krz_video_link{
+        width: 100%;
+    }
+
+    .krz_video_link a{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .msl_box > div{
+        width: 100%;
+    }
+
+    .msl_box{
+        height: auto;
+    }
+
+    .msl_box > div{
+        height: 60px;
+        justify-content: center;
+    }
+
+    .msl_desc{
+        flex-direction: column;
+    }
+
+    .msl_desc strong{
+        font-size: 20px;
+        margin-right: 0px;
+    }
+
+    .msl_desc span{
+        font-size: 12px;
+    }
+    
+    .fr_num{
+        background-size: auto 36px;
+        padding-left: 35px;
+    }
+
+    .fr_num strong{
+        font-size: 36px;
+    }
+
+    .frws_desc h2{
+        font-size: 24px;
+    }
+
+    .frws_link_box .frws_floor1 > li{
+        width: 300px;
+    }
+
+    .frws_select button{
+        height: 55px;
+        gap: 4px 0;
+        padding: 0 12px;
+        background-position: right 12px center;
+    }
+
+    .frws_select button span{
+        font-size: 11px;
+    }
+
+    .frws_select button strong{
+        font-size: 15px;
+    }
+
+    .frws_floor2{
+        max-height: 200px;
+        padding: 10px 13px;
+    }
+
+    .frws_floor2 li button{
+        font-size: 14px;
+    }
+
+    .frws_link a{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .bot_banner_slide_box{
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+
+    .footer_top{
+        margin-bottom: 22px;
+    }
+
+    .ft_rel_site{
+        margin-bottom: 22px;
+    }
+
+    .frs_floor1{
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .frs_floor1 > li:first-child{
+        width: calc(100% - 205px);
+    }
+
+    .frs_floor1 > li:last-child{
+        width: 190px;
+    }
+
+    .frs_btn button{
+        padding: 0 12px;
+        font-size: 14px;
+    }
+
+    .frs_btn button::after, .frs_btn button::before{
+        right: 12px;
+    }
+
+    .frs_floor2 li a{
+        font-size: 14px;
+    }
+
+    .ft_desc{
+        padding-left: 15px;
+    }
+
+    .footer_bot{
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    
+    .ftr_logo{
+        margin-right: 30px;
+    }
+
+    .ftr_logo img{
+        height: 36px;
+    }
+
+    .ft_desc ul li a{
+        font-size: 13px;
+    }
+    
+    .ftb_address_list li{
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .copyright{
+        font-size: 12px;
     }
 
 }

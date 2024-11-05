@@ -1169,7 +1169,7 @@ section{
 }
 
 .notice_tab_btn ul li.active .notice_tab{
-    display: block;
+    display: flex;
 }
 
 .notice_tab_box{
@@ -1294,8 +1294,7 @@ section{
 .notice_tab.type2 .nt_txt{
     width: 100%;
     max-width: 100%;
-    margin-left: 0px;
-    justify-content: space-between;
+    padding-left: 0px;
 }
 
 .nt_txt a{
