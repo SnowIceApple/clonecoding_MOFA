@@ -1223,6 +1223,27 @@
         padding: 0 15px;
     }
 
+    .bbs_control{
+        align-items: center;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .bbs_control a{
+        position: static;
+        transform: translateY(0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 35px;
+        padding-right: 20px;
+        border: 1px solid #ddd;
+        background: #fff url('../img/btn_fbn_more.png') right 17px center no-repeat;
+        box-sizing: border-box;
+    }
+
+
     .footer_top{
         margin-bottom: 22px;
     }
