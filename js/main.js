@@ -70,9 +70,39 @@ $(document).ready(function(){
     });
 
 
+
     $('.all_menu_close').on('click', function(){
         $('.all_menu_container').removeClass('active'); 
         $('body').removeClass('fixed');
+        setTimeout(() => {
+          $('.all_menu .all_menu_open button').get(0).focus();
+        }, 1);
+        if($(window).outerWidth() <= 736){
+          setTimeout(() => {
+            $('.mob_menu_open button').get(0).focus();
+          }, 1);
+        }
+    });
+
+    $('.mob_search_open > button').on('click', function(e){
+      e.stopPropagation();
+      $('.mob_search_box').toggleClass('active');
+      if($('.mob_search_box').hasClass('active')){
+        $(this).children('.hidden_text').text('검색창 닫기');
+      }
+      else{
+        $(this).children('.hidden_text').text('검색창 열기');
+      }
+    });
+
+    $('.mob_search button').on('focusout', function(){
+      $('.mob_search_box').removeClass('active');
+    });
+
+    $(document).on('click', function(e){
+      if(!$(e.target).closest('.mob_search').length){
+        $('.mob_search_box').removeClass('active');
+      }
     });
 
     $('.am_floor2 > li').each(function(){
@@ -137,6 +167,24 @@ $(document).ready(function(){
             prevSlideMessage: '이전 슬라이드로 이동',
             nextSlideMessage: '다음 슬라이드로 이동',
         },
+
+        // on: {
+        //   slideChange: function(){
+        //     var idx = this.realIndex;
+        //     var idx2 = this.activeIndex;
+        //     var msLength = this.slides.length - 1;
+        //     $(this.slides[idx]).on('keyup', function(e){
+        //       if($(e.keyCode == "9" && e.shiftKey)){
+        //         if(idx == msLength){
+        //           $('.mob_search_open button').focus();
+        //         }
+        //       }
+        //     });
+
+      
+        //   }
+        // }
+
 
       });
       
@@ -279,9 +327,13 @@ $(document).ready(function(){
                 else{
                   return;
                 }
+
+
             }
         }
       });
+
+
 
       var main_commu_slide = new Swiper('.main_commu_slide', {
         loop: true,

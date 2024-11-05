@@ -95,9 +95,7 @@
                                             전체 메뉴
                                         </button>
                                     </div>
-                                
                                 </div>
-                                
                             </div>
                         </div>
                         <!-- /ht_box end -->
@@ -643,10 +641,31 @@
                                             <span class="hidden_text">전체 메뉴 열기</span>
                                         </button>
                                     </div>
-                                    <div class="mob_search_open mob_util_btn">
-                                        <button>
-                                            <span class="hidden_text">검색창 열기</span>
-                                        </button>
+                                    <div class="mob_search_box">
+                                        <div class="mob_search_open mob_util_btn">
+                                            <button>
+                                                <span class="hidden_text">검색창 열기</span>
+                                            </button>
+                                        </div>
+                                        <div class="mob_search" tabindex="0">
+                                            <form method="get">
+                                                <fieldset>
+                                                    <legend>
+                                                        <span aria-hidden="true">SEARCH</span>
+                                                        <span class="hidden_text">검색 창 열림</span>
+                                                    </legend>
+                                                    <div class="mob_search_input">
+                                                        <label for="mob_main_search_input">
+                                                            <span class="hidden_text">검색어를 입력해주세요</span>
+                                                        </label>
+                                                        <input type="search" name="mob_main_search" id="mob_main_search_input" placeholder="검색어를 입력해주세요.">
+                                                        <button type="submit">
+                                                            <span class="hidden_text">검색하기</span>
+                                                        </button>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
