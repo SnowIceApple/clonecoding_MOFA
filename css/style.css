@@ -13,12 +13,12 @@ body.fixed{
 }
 
 .container{
-    width: 1355px;
+    max-width: 1355px;
     margin: 0 auto;
 }
 
 #header .container{
-    width: 1420px;
+    max-width: 1420px;
 }
 
 :root{
