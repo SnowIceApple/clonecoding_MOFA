@@ -2,6 +2,7 @@
 body{
     overflow-x: hidden;
     font-family: "Noto Sans KR", serif !important;
+    -webkit-text-size-adjust : none;
 }
 
 body.fixed{
