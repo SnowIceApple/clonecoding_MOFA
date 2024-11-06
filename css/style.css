@@ -13,11 +13,13 @@ body.fixed{
 }
 
 .container{
+    width: 100%;
     max-width: 1355px;
     margin: 0 auto;
 }
 
 #header .container{
+    width: 100%;
     max-width: 1420px;
 }
 
