@@ -324,6 +324,7 @@ section{
 	font-weight: 700;
 	letter-spacing: -0.5px;
     padding: 6px 0;
+    color: #000;
 }
 
 .header_top .all_menu button::after{
