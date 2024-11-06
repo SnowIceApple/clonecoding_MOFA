@@ -272,7 +272,7 @@
 
 }
 
-@media all and (max-width: 1081px){
+@media all and (max-width: 1080px){
 
     #header::after,
     #header::before
@@ -535,7 +535,7 @@
     }
 }
 
-@media all and (max-width: 736px){
+@media all and (max-width: 737px){
 
     .container{
         padding: 0;
