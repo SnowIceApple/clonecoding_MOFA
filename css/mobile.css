@@ -540,10 +540,15 @@
     .container{
         padding: 0;
     }
+    
+    #header .container{
+        padding: 0 15px;
+    }
 
     #header{
         height: 100px;
     }
+
 
     .ht_box{
         padding: 12px 0;
