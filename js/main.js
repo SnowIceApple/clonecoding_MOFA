@@ -488,5 +488,5 @@ $(document).ready(function(){
 $(window).on('orientationchange', function(){
   setTimeout(() => {
     location.reload();
-  }, 100);
+  }, 1);
 });
