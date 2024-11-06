@@ -1089,6 +1089,11 @@
         gap: 5px 0;
     }
 
+    .gov_banner_slide{
+        max-width: 340px;
+        width: 100%;
+    }
+
     .gov_banner_slide_box{
         background: none;
         padding: 40px 0;
@@ -1096,6 +1101,7 @@
     }
 
     .gov_banner_control{
+        width: 100%;
         bottom: 40px;
     }
 
