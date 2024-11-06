@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
 
     var basicHeight = 140;
-    if($(window).outerWidth() <= 736){
+    if($(window).outerWidth() <= 737){
       basicHeight = 100;
     }
     else{
@@ -23,7 +23,7 @@ $(document).ready(function(){
         var megaMenuHeight = tg.children('.mega_container').height();
         
         var activeHeaderHeight = megaMenuHeight + basicHeight;
-        if($(window).outerWidth() <= 736){
+        if($(window).outerWidth() <= 737){
           basicHeight = 100;
         }
         console.log(megaMenuHeight);
@@ -37,7 +37,7 @@ $(document).ready(function(){
     });
 
     $('#nav').on('mouseout', function(){
-      if($(window).outerWidth() <= 736){
+      if($(window).outerWidth() <= 737){
         basicHeight = 100;
       }
         $('#nav .floor1 li').removeClass('active');
@@ -47,7 +47,7 @@ $(document).ready(function(){
     });
 
     $('.hb_left, .hb_right').on('focusin', function(){
-      if($(window).outerWidth() <= 736){
+      if($(window).outerWidth() <= 737){
         basicHeight = 100;
       }
         $('#nav .floor1 li').removeClass('active');
@@ -57,7 +57,7 @@ $(document).ready(function(){
     });
 
     $(window).on('resize', function(){
-      if($(window).outerWidth() <= 736){
+      if($(window).outerWidth() <= 737){
         basicHeight = 100;
         header.css('height', basicHeight + 'px');
       }
@@ -85,7 +85,7 @@ $(document).ready(function(){
         setTimeout(() => {
           $('.all_menu .all_menu_open button').get(0).focus();
         }, 1);
-        if($(window).outerWidth() <= 736){
+        if($(window).outerWidth() <= 737){
           setTimeout(() => {
             $('.mob_menu_open button').get(0).focus();
           }, 1);
@@ -120,7 +120,7 @@ $(document).ready(function(){
     });
 
     $('.aml_tit > a').on('click', function(e){
-      if($(window).outerWidth() <= 736){
+      if($(window).outerWidth() <= 737){
         e.preventDefault();
         $(this).closest('li').addClass('active').siblings().removeClass('active');
       }
@@ -131,7 +131,7 @@ $(document).ready(function(){
       if($(this).closest('li').hasClass('deco')){
         e.preventDefault();
       }
-      if($(window).outerWidth() <= 736){
+      if($(window).outerWidth() <= 737){
         $(this).closest('li.deco').toggleClass('active').siblings().removeClass('active');
       }
       // $('.am_floor2 > li.deco').each(function(){
