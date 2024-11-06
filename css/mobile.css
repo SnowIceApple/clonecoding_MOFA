@@ -1,4 +1,4 @@
-@media all and (min-width: 1680px){
+@media screen and (min-width: 1680px){
     #nav .floor1 > li > a{
         font-size: 18px;
         padding: 29px 18px;
@@ -9,7 +9,7 @@
     }
 }
 
-@media all and (max-width: 1480px){
+@media screen and (max-width: 1480px){
     .container{
         box-sizing: border-box;
     }
@@ -24,7 +24,7 @@
     }
 }
 
-@media all and (max-width: 1380px){
+@media screen and (max-width: 1380px){
     .container{
         width: 100%;
         padding: 0 30px;
@@ -36,7 +36,7 @@
 
 }
 
-@media all and (max-width: 1300px){
+@media screen and (max-width: 1300px){
 
     .new_kr a img{
         width: 6vw;
@@ -201,7 +201,7 @@
     }
 }
 
-@media all and (max-width: 1200px){
+@media screen and (max-width: 1200px){
 
     .new_kr a img{
         width: 7.3vw;
@@ -272,7 +272,7 @@
 
 }
 
-@media all and (max-width: 1081px){
+@media screen and (max-width: 1081px){
 
     #header::after,
     #header::before
@@ -393,7 +393,7 @@
 
 }
 
-@media all and (max-width: 900px){
+@media screen and (max-width: 900px){
 
     #main_notice_wide_banner{
         margin-bottom: 100px;
@@ -535,7 +535,7 @@
     }
 }
 
-@media all and (max-width: 737px){
+@media screen and (max-width: 737px){
 
     .container{
         padding: 0;
