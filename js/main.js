@@ -486,7 +486,14 @@ $(document).ready(function(){
 });
 
 $(window).on('orientationchange', function(){
+  if (
+    navigator.userAgent.indexOf('Safari') != -1 && 
+    navigator.userAgent.indexOf('Chrome') == -1 && 
+    navigator.userAgent.indexOf('CriOS/') == -1
+)  { 
   setTimeout(() => {
     location.reload();
   }, 1);
+}
+
 });
