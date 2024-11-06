@@ -9,16 +9,17 @@ body.fixed{
 }
 
 #wrap{
-    width: 100%;
 }
 
 .container{
+    width: 100%;
     max-width: 1355px;
     margin: 0 auto;
 }
 
 #header .container{
     max-width: 1420px;
+    width: 100%;
 }
 
 :root{
