@@ -34,6 +34,13 @@
 
 }
 
+@media all and (max-width: 1355px){
+    .main_info_slide_control{
+        right: 0;
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 1300px){
 
     .new_kr a img{
@@ -189,10 +196,6 @@
         opacity: 0.2 !important;
     }
 
-    .main_info_slide_control{
-        right: 0;
-        margin-right: 0;
-    }
 
     .main_commu_slide .swiper-slide{
         width: 265px;
