@@ -152,6 +152,8 @@ $(document).ready(function(){
         centeredSlides: true, 
         slidesPerView: 1,
         spaceBetween: 40,
+        observer: true, 
+        observeParents: true,
         
         speed: 1000,
         autoplay: {
@@ -215,6 +217,8 @@ $(document).ready(function(){
         fadeEffect: {
             crossFade: true
           },
+          observer: true, 
+          observeParents: true,
 
           speed: 2000,
         autoplay: {
@@ -271,6 +275,8 @@ $(document).ready(function(){
             crossFade: true
           },
           touchRatio: 0,
+          observer: true, 
+          observeParents: true,
 
         speed: 2000,
         autoplay: {
@@ -350,6 +356,8 @@ $(document).ready(function(){
         slidesPerView: 'auto',
         spaceBetween: 30,
         speed: 1000,
+        observer: true, 
+        observeParents: true,
 
         navigation: {
           prevEl: '.mcs_prev',
@@ -422,6 +430,8 @@ $(document).ready(function(){
         slidesPerView: 'auto',
         spaceBetween: 10,
         speed: 1000,
+        observer: true, 
+        observeParents: true,
 
         navigation: {
           prevEl: '.mcs_prev',
