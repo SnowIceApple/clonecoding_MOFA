@@ -749,6 +749,7 @@
 
     .amt_gov{
         border: none;
+        border-radius: 0;
     }
 
     .amt_gov ul{
