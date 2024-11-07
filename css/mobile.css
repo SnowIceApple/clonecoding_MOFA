@@ -1315,11 +1315,16 @@
     .frws_floor2 li button{
         font-size: 14px;
     }
+    
+    .frws_link{
+        width: 100%;
+    }
 
     .frws_link a{
         font-size: 14px;
         padding: 8px 15px;
     }
+
 
     .bot_banner_slide_box{
         box-sizing: border-box;
