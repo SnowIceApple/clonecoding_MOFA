@@ -1021,7 +1021,6 @@
         font-size: 13px;
     }
 
-
     .main_notice .main_tit{
         padding-bottom: 25px;
     }
@@ -1104,7 +1103,7 @@
     }
 
     .gov_banner_control{
-        width: 100%;
+        width: 340px;
         bottom: 40px;
     }
 
@@ -1673,6 +1672,12 @@
 
 }
 
+@media all and (max-width: 400px){
+    .gov_banner_control{
+        width: 100%;
+    }
+}
+
 /* ipad */
 
 @media screen and (min-device-width : 736px) and (max-device-width : 1080px) and (orientation: portrait){
@@ -1936,7 +1941,7 @@
 
 /* iphone */
 
-@media screen and (min-device-width: 340px) and (max-device-width: 767px) and (orientation: portrait){
+@media screen and (min-device-width: 400px) and (max-device-width: 767px) and (orientation: portrait){
     .container{
         padding: 0;
     }
@@ -2423,7 +2428,6 @@
         font-size: 13px;
     }
 
-
     .main_notice .main_tit{
         padding-bottom: 25px;
     }
@@ -2503,6 +2507,11 @@
         background: none;
         padding: 40px 0;
         margin-bottom: 0px;
+    }
+
+    .gov_banner_control{
+        width: 340px;
+        bottom: 40px;
     }
 
     .gov_banner_control{
