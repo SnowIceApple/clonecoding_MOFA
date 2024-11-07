@@ -895,6 +895,8 @@
         letter-spacing: -0.5px;
         font-size: 15px;
         padding: 15px 0;
+        padding: 15px 17px 15px 0;
+        box-sizing: border-box;
     }
 
     .deco .amf2_tit a::before,
@@ -2306,7 +2308,8 @@
         color: #666;
         letter-spacing: -0.5px;
         font-size: 15px;
-        padding: 15px 0;
+        padding: 15px 17px 15px 0;
+        box-sizing: border-box;
     }
 
     .deco .amf2_tit a::before,
