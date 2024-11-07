@@ -10,6 +10,7 @@ body.fixed{
 }
 
 #wrap{
+    width: 100%;
 }
 
 .container{
@@ -808,6 +809,7 @@ section{
 
 .content_box{
     margin-top: 140px;
+    width: 100%;
 }
 
 .main{
