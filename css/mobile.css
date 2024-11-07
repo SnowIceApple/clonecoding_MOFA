@@ -21,6 +21,11 @@
     .logo{
         margin-right: 15px;
     }
+
+    .main_info_slide_control{
+        right: 0;
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 1380px){
@@ -34,12 +39,6 @@
 
 }
 
-@media all and (max-width: 1355px){
-    .main_info_slide_control{
-        right: 0;
-        margin-right: 0;
-    }
-}
 
 @media screen and (max-width: 1300px){
 
