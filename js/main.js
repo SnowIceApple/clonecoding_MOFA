@@ -320,6 +320,8 @@ $(document).ready(function(){
         slidesPerView: 'auto',
         speed: 1000,
         watchOverflow: false,
+        observeParents: true,
+        observer: true,
 
         navigation: {
           nextEl: '.mis_next button',
