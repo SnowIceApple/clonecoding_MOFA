@@ -150,7 +150,7 @@ $(document).ready(function(){
         direction: 'horizontal',
         loop: true,
         centeredSlides: true, 
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         spaceBetween: 40,
         observer: true, 
         observeParents: true,

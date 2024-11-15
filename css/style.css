@@ -1,4 +1,8 @@
 
+html, body{
+    width: 100%;
+}
+
 body{
     overflow-x: hidden;
     font-family: "Noto Sans KR", serif !important;
