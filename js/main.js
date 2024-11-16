@@ -149,6 +149,7 @@ $(document).ready(function(){
     var main_slide = new Swiper('.main_slide', {
         direction: 'horizontal',
         loop: true,
+        // initialSlide: 1,
         centeredSlides: true, 
         slidesPerView: 'auto',
         spaceBetween: 40,
